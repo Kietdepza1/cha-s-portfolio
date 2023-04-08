@@ -1,0 +1,305 @@
+html,
+body {
+  z-index: 0;
+  margin: 0;
+  width: 100%;
+  color: white;
+  height: 100%;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+#log-page {
+  z-index: 3;
+  background: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+#cha-photo {
+  background: white;
+  height: 200px;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+}
+.nav-button {
+  font-family: "Roboto" serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  border: 1px solid black;
+  color: #000000;
+  height: 60px;
+  width: 230px;
+  margin: 20px;
+  background: white;
+  color: black;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#moon-photo {
+  white-space: nowrap;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Playfair Display", serif;
+  line-height: 126px;
+  font-size: 95px;
+  display: flex;
+  font-weight: 400;
+  background-image: url("img/moon.jpeg");
+  background-size: 1300px;
+  height: 600px;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+.welcome-section h3:last-child {
+  font-family: "Orbitron", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.welcome-section h3:first-child {
+  font-family: "Orbitron", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+}
+#aboutme {
+  display: flex;
+  flex-direction: column;
+  background: #d8d8d8;
+  height: 1920px;
+  width: 1920px;
+  z-index: 1;
+}
+.semi-circle {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 1649px;
+  height: 1649px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  margin-top: -824.5px;
+  font-size: 100px;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+#circle-text {
+  margin-top: 800px;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 95px;
+  line-height: 127px;
+  text-align: center;
+  width: 912px;
+  height: 459px;
+  color: inherit;
+}
+.semi-circle:hover {
+  background-color: black;
+  color: #ffffff;
+}
+.semi-circle:hover #circle-text {
+  margin-top: 650px;
+}
+.semi-circle #circle-text #quote2 {
+  display: none;
+}
+.semi-circle:hover #circle-text #quote2 {
+  display: block;
+}
+.semi-circle:hover #circle-text #quote1 {
+  display: none;
+}
+.nav-button:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+#avatar {
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  z-index: 3;
+  background: url("avatar.png");
+  filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.3));
+  margin-top: -200px;
+}
+#main-image {
+  background: url(main.png) center;
+  width: 1920px;
+  height: 1080px;
+  z-index: 2;
+  margin-top: -50px;
+}
+#semi-circle-flipped {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 2819px;
+  width: 1649px;
+  margin: -150px;
+  background-color: #eeeeee;
+  border-radius: 3500px;
+  outline: solid gray;
+  outline-offset: -50px;
+}
+#aboutme {
+  font-family: "Playfair Display";
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#aboutme-text {
+  margin-top: 1400px;
+  z-index: 2;
+  color: #000000;
+  text-align: center;
+  font-size: 40px;
+}
+#aboutme-name {
+  margin-top: 50px;
+  font-size: 95px;
+  text-align: center;
+  color: black;
+}
+#aboutme-content {
+  margin-top: 50px;
+  font-size: 32px;
+  color: black;
+}
+#aboutme-wrap {
+  width: 974px;
+  text-align: justify;
+}
+#end-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 6885px;
+}
+#library {
+  height: 2115px;
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.library-child-1 {
+  color: #000000;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  margin-top: 96px;
+  margin-bottom: 80px;
+}
+.library-child {
+  color: #000000;
+  margin-bottom: 60px;
+}
+.lib-type {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 95px;
+  line-height: 127px;
+  text-align: center;
+}
+.lib-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.album1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px #000000 solid;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 60px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-right: 60px;
+}
+.album2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px #000000 solid;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 60px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 60px;
+}
